@@ -4,7 +4,7 @@ FROM fedora:36
 ARG S6_OVERLAY_VERSION=3.0.0.2-2
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-
+RUN apt install -- libvirt-daemon-system -y
 RUN dnf --setopt=install_weak_deps=False install -y -- \
     xz \
     curl \

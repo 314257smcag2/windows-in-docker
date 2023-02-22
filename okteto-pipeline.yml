@@ -1,4 +1,4 @@
 deploy:
-  - okteto stack deploy --build -f docker-compose.yml
+  - okteto stack deploy --build -f docker.yml
 devs:
-  - docker-compose.yml
+  - docker.yml
